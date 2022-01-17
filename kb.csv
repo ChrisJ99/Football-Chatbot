@@ -1,0 +1,26 @@
+"player(x) -> -team(x)"
+
+"plays_for(x,y) & player(x) -> team(y)"
+"plays_for(grealish, england)"
+"plays_for(trent, england)"
+"plays_for(debruyne, belgium)"
+"plays_for(ronaldo, portugal)"
+"plays_for(lukaku, france)"
+
+"player(stones)"
+"player(trent)"
+"player(ronaldo)"
+"player(debruyne)"
+
+"england(grealish)"
+"england(stones)"
+"portugal(ronaldo)"
+"england(trent)"
+"belgium(debruyne)"
+"france(lukaku)"
+"france(mbappe)"
+
+"portugal(x) -> (-england(x) & -belgium(x) & -france(x))"
+"england(x) -> (-portugal(x) & -belgium(x) & -france(x))"
+"belgium(x) -> (-england(x) & -portugal(x) & -france(x))"
+"france(x) -> (-england(x) & -belgium(x) & -portugal(x))"
